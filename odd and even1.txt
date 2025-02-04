@@ -1,0 +1,12 @@
+<html>
+<body>
+<script>
+let num1 = prompt(Enter number 1:);
+if (num1 % 2 == 0) {
+alert ("even");
+} else {
+alert ("odd");
+}
+</script>
+</body>
+</html>

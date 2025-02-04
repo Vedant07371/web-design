@@ -1,0 +1,10 @@
+<html>
+<body bgcolor= "cyan" >
+<script>
+let name = prompt("What is your name?");
+alert ("Hello, "+ name +" ! Welcome" )
+let age = prompt("What is your age?");
+alert ("Hello, My age is " + age )
+</script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<html>
+<head>
+<title>quiz</title> 
+</head>
+<body>
+<h1>QUIZ</h1>
+<p><strong>Question 1:</strong>what is the capital of France?</p>
+<input type= "radio" name="q1" value="paris>paris<br>

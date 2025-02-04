@@ -1,0 +1,28 @@
+SIMPLE QUIZ USING ONCLICK ATTRIBUTE  AND BUTTON TYPE
+Menu driven program Add, Subtract, Multiply or Divide
+
+
+<html>
+<head>
+  <title>Quiz</title>
+</head>
+<body>
+  <h1>Quiz</h1>
+       <br><br>
+    <p>Which is largest ocean</p>
+    <button type="button" onclick="checkAnswer('Pacific Ocean')">Pacific Ocean</button>
+    <button type="button" onclick="checkAnswer('Atlantic Ocean')">Atlantic Ocean</button>
+    <button type="button" onclick="checkAnswer('Artic Ocean')">Artic Ocean</button>
+     <button type="button" onclick="checkAnswer('Indian Ocean')">Indian Ocean</button>
+<p id="result"></p>
+<script>
+    function checkAnswer(answer) {
+      const result = document.getElementById("answer");
+      if (answer==='Pacific Ocean') {
+        result.innerText = "Correct option";
+      } else { 
+             result.innerText = "Wrong option";
+   }
+  </script>
+</body>
+</html>

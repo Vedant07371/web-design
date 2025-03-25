@@ -34,33 +34,33 @@
 
     <div class="item">
         <p> 🥎 cricket ball - ₹50</p>
-        <button onclick="addToCart('🥎cricket ball')">Add to Cart</button>
+        <button onclick="addToCart('🥎cricket ball',50)">Add to Cart</button>
     </div>
 
     <div class="item">
-        <p>🏏 bat - ₹200</p>
-        <button onclick="addToCart('🏏bat')">Add to Cart</button>
+        <p>🏏 bat - ₹1000</p>
+        <button onclick="addToCart('🏏bat'1000)">Add to Cart</button>
     </div>
 
     <div class="item">
-        <p>\|/ stumps - ₹150</p>
-        <button onclick="addToCart('\|/ stumps ')">Add to Cart</button>
+        <p>\|/ stumps - ₹550</p>
+        <button onclick="addToCart('\|/ stumps '550)">Add to Cart</button>
     </div>
 
 
     <div class="item">
-        <p> ⚽ football - ₹220</p>
-        <button onclick="addToCart('⚽ football')">Add to Cart</button>
+        <p> ⚽ football - ₹420</p>
+        <button onclick="addToCart('⚽ football'420)">Add to Cart</button>
     </div>
 
     <div class="item">
-        <p> ⚾ baseball - ₹200</p>
-        <button onclick="addToCart('⚾ baseball')">Add to Cart</button>
+        <p> ⚾ baseball - ₹600</p>
+        <button onclick="addToCart('⚾ baseball'600)">Add to Cart</button>
     </div>
 
     <div class="item">
         <p>🏸badminton- ₹650</p>
-        <button onclick="addToCart('🏸badminton')">Add to Cart</button>
+        <button onclick="addToCart('🏸badminton'650)">Add to Cart</button>
     </div>
 
 
@@ -70,13 +70,20 @@
     </div>
 
     <script>
-        function addToCart(item) {
+        let totalAmount = 0;
+        function addToCart(item,price) {
             let cart = document.getElementById("cartList");
+              let total = document.getElementById("totalAmount");
+            // Update cart items
             if (cart.innerHTML === "Cart is empty") {
                 cart.innerHTML = item;
             } else {
                 cart.innerHTML += ", " + item;
+                
             }
+         // Update total amount
+          totalAmount += price;
+        total.innerHtml
         }
     </script>
 
